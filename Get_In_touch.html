@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/style_get_in_touch.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("cS4MPeWQNKyElWMFu");
+        })();
+    </script>
+
+</head>
+
+<body>
+
+
+
+
+    <h1>Birhan Solutions</h1>
+
+    <p>Get in touch</p>
+
+    <div class="row">
+
+        <form class="box">
+
+            <script src="js/scripts.js"></script>
+            <input type="text" placeholder="First Name*" style="width: 270px;" id="fname" />
+            <input type="text" placeholder="Last Name*" style="width: 270px;" id="lname" />
+            <input type="email" placeholder="Email Address*" style="width: 270px;" id="email" />
+            <input type="tel" id="phone" style="width: fit-content;" />
+            <textarea id="message" class=" form-control" name="message" rows="4" placeholder="Type your message*" style="overflow: auto; resize: none;
+                height: 150px;
+                padding: 12px 20px;
+                box-sizing: border-box;
+                border: 2px solid;
+                border-color: #3498db;
+                border-radius: 20px;
+                background-color: #f8f8f8;
+                font-size: 16px;
+                resize: none;
+                background-color: black;
+                width: 270px;
+                color: white;"></textarea>
+            <input type="submit" name="message" value="Send Message"
+                style=" color:red;font-size: large;font-weight: bold" onclick="sendMails()" />
+            <!-- <button type="submit" class="btn" onclick="sendMail()">Send Message</button> -->
+
+        </form>
+        <script src="js/intlTelInput.js"></script>
+        <script>
+            var input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+                // allowDropdown: false,
+                // autoHideDialCode: false,
+                // autoPlaceholder: "off",
+                // dropdownContainer: document.body,
+                // excludeCountries: ["us"],
+                // formatOnDisplay: false,
+                // geoIpLookup: function(callback) {
+                //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+                //     var countryCode = (resp && resp.country) ? resp.country : "";
+                //     callback(countryCode);
+                //   });
+                // },
+                // hiddenInput: "full_number",
+                // initialCountry: "auto",
+                // localizedCountries: { 'de': 'Deutschland' },
+                // nationalMode: false,
+                // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+                // placeholderNumberType: "MOBILE",
+                // preferredCountries: ['cn', 'jp'],
+                // separateDialCode: true,
+                utilsScript: "js/utils.js",
+            });
+        </script>
+
+
+    </div>
+
+    <!-- </section> -->
+
+
+    </div>
+
+
+
+</body>
+
+</html>
