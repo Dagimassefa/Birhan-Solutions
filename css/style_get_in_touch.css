@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: darkolivegreen;
+    box-sizing: border-box;
+    background-color: #aa95c8;
+    background-color: #cfc3e0;
+    background-color: #cfc3e0;
+    background-image: url("img/inicio slider/slider_3.jpg");
+}
+
+.box {
+    width: 70%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+    border-radius: 40px;
+    background-image: url("img/logo/logo2.jpg");
+}
+
+h1 {
+    color: darkgreen;
+    text-transform: uppercase;
+    font-weight: 1000;
+    text-align: center;
+}
+
+p {
+    color: darkgreen;
+    text-transform: uppercase;
+    font-weight: 1000;
+    text-align: center;
+
+    padding-bottom: 3rem;
+}
+
+.box input[type="text"],
+.box input[type="tel"],
+.box textarea,
+.box input[type="email"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: fit-content;
+    outline: none;
+    color: white;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.box input[type="text"]:focus.box input[type="tel"]:focus.box textarea :focus.box input[type="email"]:focus {
+    width: fit-content;
+    border-color: #2ecc71;
+
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    background: 2ecc71;
+}
