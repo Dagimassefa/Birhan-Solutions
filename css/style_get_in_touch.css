@@ -7,7 +7,7 @@ body {
     background-color: #aa95c8;
     background-color: #cfc3e0;
     background-color: #cfc3e0;
-    background-image: url("img/inicio slider/slider_3.jpg");
+    background-image: url("../img/how_it_works/connect.jpeg");
 }
 
 .box {
@@ -20,7 +20,7 @@ body {
     background: #191919;
     text-align: center;
     border-radius: 40px;
-    background-image: url("img/logo/logo2.jpg");
+    /* background-image: url("img/logo/logo2.jpg"); */
 }
 
 h1 {

@@ -42,11 +42,19 @@
 
     <!-- Responsive Stylesheet File -->
     <link href="css/responsive.css" rel="stylesheet">
-    <link href="how_it_works.css" rel="stylesheet">
+    <link href="css/how_it_works.css" rel="stylesheet">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-</head>
+    <link rel="stylesheet" href="css/intlTelInput.css">
 
+</head>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("cS4MPeWQNKyElWMFu");
+    })();
+</script>
 
 <!--!----------------------------------------------------------------------------------------------------------------- -->
 <!--!                                                 BODY                                                             -->
@@ -92,13 +100,13 @@
                             <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1"
                                 id="navbar-example">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li>
+                                    <li class="active">
                                         <a class="page-scroll" href="index.html">Home</a>
                                     </li>
                                     <li>
                                         <a class="page-scroll" href="Our Services.html">Our Services</a>
                                     </li>
-                                    <li class="active">
+                                    <li>
                                         <a class="page-scroll" href="#About Us">About Us</a>
                                     </li>
                                     <li>
@@ -115,6 +123,61 @@
             </div>
         </div>
     </header>
+    <div id="sticker" class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+
+
+                    <!--!----------------------------------------------------------------------------------------------------------------- -->
+                    <!--!                                                 NAVIGATION BAR                                                   -->
+                    <!--!----------------------------------------------------------------------------------------------------------------- -->
+
+                    <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!-- Brand -->
+                            <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                                <a href="index.html">
+                                    <img src="img/logo/logo_mini.jpg" alt="" title="" style="padding-top: 10px;">
+                                </a>
+                            </a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1"
+                            id="navbar-example">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a class="page-scroll" href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="Our Services.html">Our Services</a>
+                                </li>
+                                <li class="active">
+                                    <a class="page-scroll" href="#About Us">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="For_Developers.html">For Developers</a>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
 
 
     <!--!----------------------------------------------------------------------------------------------------------------- -->
@@ -125,9 +188,9 @@
     <div id="home" class="slider-area">
         <div class="bend niceties preview-2">
             <div id="ensign-nivoslider" class="slides">
-                <img src="img/inicio slider/slider_1.jpg" alt="" title="#slider-direction-1" />
-                <img src="img/inicio slider/slider_2.jpg" alt="" title="#slider-direction-2" />
-                <img src="img/inicio slider/logo.jpg" alt="" title="#slider-direction-3" />
+                <img src="img/inicio slider/aboutnew.jpg" alt="" title="#slider-direction-1" />
+                <!-- <img src="img/inicio slider/slider_2.jpg" alt="" title="#slider-direction-2" />
+                <img src="img/inicio slider/logo.jpg" alt="" title="#slider-direction-3" /> -->
             </div>
 
             <!-- direction 1 -->
@@ -148,8 +211,11 @@
                                         across
                                         the world for exceptional product delivery.
                                     </h1>
-                                    <a class="ready-btn page-scroll" href="Get_In_touch.html" target="_blank">Get in
-                                        touch</a>
+                                    <!-- <a class="ready-btn page-scroll" href="Get_In_touch.html" target="_blank">Get in
+                                        touch</a> -->
+                                    <a class="ready-btn page-scroll" href="#"
+                                        class="btn btn-lg btn-secondary hidden-xs bounceInUp animated slow"
+                                        data-toggle="modal" data-target="#getintouch">Get in touch</a>
                                 </div>
                                 <!-- layer 3 -->
                                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s"
@@ -162,24 +228,24 @@
             </div>
 
             <!-- direction 2 -->
-            <div id="slider-direction-2" class="slider-direction slider-two">
+            <!-- <div id="slider-direction-2" class="slider-direction slider-two">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="slider-content text-center">
-                                <!-- layer 1 -->
-                                <div class="layer-1-1 hidden-xs wow slideInUp tonyred" data-wow-duration="2s"
+                            <div class="slider-content text-center"> -->
+            <!-- layer 1 -->
+            <!-- <div class="layer-1-1 hidden-xs wow slideInUp tonyred" data-wow-duration="2s"
                                     data-wow-delay=".2s">
-                                    <h2 class="title1"><span>Birhan</span> Solutions</h2>
-                                </div>
-                                <!-- layer 2 -->
-                                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                                    <h2 class="title1"><span>Birhan</span> Solutions</h2> -->
+            <!-- </div> -->
+            <!-- layer 2 -->
+            <!-- <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
                                     <h1 class="title2">Grow your business by working with top software engineers.</h1>
                                     <a class="ready-btn page-scroll" href="Get_In_touch.html" target="_blank">Get in
                                         touch</a>
-                                </div>
-                                <!-- layer 3 -->
-                                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s"
+                                </div> -->
+            <!-- layer 3 -->
+            <!-- <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s"
                                     data-wow-delay=".2s">
                                 </div></a>
                             </div>
@@ -187,40 +253,40 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <!-- direction 3 -->
-        <div id="slider-direction-3" class="slider-direction slider-two">
+            <!-- direction 3 -->
+            <!-- <div id="slider-direction-3" class="slider-direction slider-two">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="slider-content">
-                            <!-- layer 1 -->
-                            <div class="layer-1-1 hidden-xs wow slideInUp tonyred" data-wow-duration="2s"
+                        <div class="slider-content"> -->
+            <!-- layer 1 -->
+            <!-- <div class="layer-1-1 hidden-xs wow slideInUp tonyred" data-wow-duration="2s"
                                 data-wow-delay=".2s">
                                 <h2 class="title1"><span>Birhan</span> Solutions</h2>
-                            </div>
-                            <!-- layer 2 -->
-                            <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                            </div> -->
+            <!-- layer 2 -->
+            <!-- <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
                                 <h1 class="title2">Grow your business by working with top software engineers.</h1>
                                 <a class="ready-btn page-scroll" href="Get_In_touch.html" target="_blank">Get in
                                     touch</a>
-                            </div>
-                            <!-- layer 3 -->
-                            <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                            </div> -->
+            <!-- layer 3 -->
+            <!-- <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Slider Area -->
+    </div> -->
+            <!-- End Slider Area -->
 
 
 
 
-    </div>
+        </div>
     </div>
     </div>
     </div>
@@ -241,59 +307,22 @@
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="pri_table_list active">
-                        <h3>Web Development</h3>
+                        <h3>Development</h3>
                         <ol>
                             <li class="check">Python</li>
                             <li class="check">PHP</li>
                             <li class="check">C#</li>
-                            <li class="check">Go</li>
-                            <li class="check">Javascript</li>
-                            <li class="check">React</li>
-                            <li class="check">Angular</li>
-                            <li class="check">VueJS</li>
-                        </ol>
-                        <a href="Get_In_touch.html"> <button>Get In Touch</button></a>
-
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="pri_table_list active">
-                        <h3>Desktop Application</h3>
-                        <ol>
-                            <li class="check">C#</li>
                             <li class="check">C++</li>
-                            <li class="check">Python</li>
-                            <li class="check">Java</li>
-                            <li class="check">VB</li>
-                            <li class="check">C</li>
-                            <li class="check">Delphi</li>
                             <li class="check">Swift</li>
-                        </ol>
-                        <a href="Get_In_touch.html"> <button>Get In Touch</button></a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="pri_table_list active">
-                        <h3>Mobile Application</h3>
-                        <ol>
-                            <li class="check">Java</li>
-                            <li class="check">Swift</li>
-                            <li class="check">Kotlin</li>
-                            <li class="check">Dart</li>
-                            <li class="check">React Native</li>
                             <li class="check">Flutter</li>
-                            <li class="check">Xamarin</li>
-                            <li class="check">Native Scripts</li>
+                            <li class="check">Java</li>
+                            <li class="check">React Native</li>
                         </ol>
-                        <a href="Get_In_touch.html"> <button>Get In Touch</button></a>
+                        <a data-toggle="modal" data-target="#getintouch" href="#">
+                            <button>Get In Touch</button></a>
+
                     </div>
                 </div>
-                <br><br>
-
-            </div>
-
-
-            <div class="row" style="padding-top: 50px;">
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="pri_table_list active">
                         <h3>Database Administration</h3>
@@ -307,23 +336,8 @@
                             <li class="check">Sybase</li>
                             <li class="check">SQLite</li>
                         </ol>
-                        <a href="Get_In_touch.html"> <button>Get In Touch</button></a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="pri_table_list active">
-                        <h3>Multimedia Design</h3>
-                        <ol>
-                            <li class="check">Canva</li>
-                            <li class="check">Adobe Color CC</li>
-                            <li class="check">InDesign CC</li>
-                            <li class="check">After Effects CC</li>
-                            <li class="check">Adobe Photoshop</li>
-                            <li class="check">Adobe Premiere Pro</li>
-                            <li class="check">Affinity Designer</li>
-                            <li class="check">PosterMyWall</li>
-                        </ol>
-                        <a href="Get_In_touch.html"> <button>Get In Touch</button></a>
+                        <a data-toggle="modal" data-target="#getintouch" href="#">
+                            <button>Get In Touch</button></a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
@@ -339,19 +353,30 @@
                             <li class="check">Exploratory Testing</li>
                             <li class="check">Security Testing</li>
                         </ol>
-                        <a href="Get_In_touch.html"> <button>Get In Touch</button></a>
+                        <a data-toggle="modal" data-target="#getintouch" href="#">
+                            <button>Get In Touch</button></a>
                     </div>
                 </div>
                 <br><br>
 
             </div>
+
+            <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+
+                <h1 class="title2" style="color: Black; padding-left: 30px;">Didn't find what you are looking for?
+                    <br><a data-toggle="modal" href="#" data-target="#getintouch" style="color: red;">Contact Us</a>
+
+
+
+
+            </div>
         </div>
-        <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+        <!-- <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
 
             <h1 class="title2" style="color: Black; padding-left: 30px;">Didn't find what you are looking for? <a
                     href="Get_In_touch.html" style="color: red;" class="blink_me">Contact
-                    Us</a>
-                <style>
+                    Us</a> -->
+        <!-- <style>
                     .blink_me {
                         animation: blinker 0.5s linear infinite;
                     }
@@ -361,14 +386,105 @@
                             opacity: 0;
                         }
                     }
-                </style>
-            </h1>
+                </style> -->
+        <!-- </h1> -->
 
 
 
+    </div>
+    </div>
+    <div class="modal fade" id="getintouch" tabindex="-1" role="dialog" aria-labelledby="getintouchLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:lightblue">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="getintouchLabel">Birhan Solutions</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-getintouch" method="post">
+                        <script src="js/scripts.js"></script>
+                        <h3 class="title-style-1 text-center">Get in touch <span class="title-under"></span> </h3>
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="fname" id="fname" placeholder="First Name*"
+                                required style="height: 40px;border-radius: 10px" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name*"
+                                required style="height: 40px;border-radius: 10px" />
+                            <div class="validation"></div>
+                        </div>
+
+
+                        <div style="width: 100%;display: inline-flex;margin-bottom: 15px;">
+                            <input type="email" class="form-control" name="email" id="email"
+                                placeholder="Email Address*" required
+                                style="height: 40px;border-radius: 10px;width: 60%;margin-right: 10px;" />
+                            <div class="validation"></div>
+                            <input type="tel" name="phone" id="phone" class="form-control"
+                                style="border-radius: 10px;height: 40px;" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" style="border-radius: 10px;width:100%;resize: none;"
+                                rows="10" placeholder="Type your message*"></textarea>
+                            <div class="validation"></div>
+                        </div>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="form-group col-md-12">
+                        <button type="submit" class="btn btn-primary pull-right" name="send" onclick="sendMails()"
+                            style="margin-right: 20px;">Send</button>
+                    </div>
+
+                </div>
+
+
+
+
+
+                </form>
+                <script src="js/intlTelInput.js"></script>
+                <script>
+                    var input = document.querySelector("#phone");
+                    window.intlTelInput(input, {
+                        // allowDropdown: false,
+                        // autoHideDialCode: false,
+                        // autoPlaceholder: "off",
+                        // dropdownContainer: document.body,
+                        // excludeCountries: ["us"],
+                        // formatOnDisplay: false,
+                        // geoIpLookup: function(callback) {
+                        //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+                        //     var countryCode = (resp && resp.country) ? resp.country : "";
+                        //     callback(countryCode);
+                        //   });
+                        // },
+                        // hiddenInput: "full_number",
+                        // initialCountry: "auto",
+                        // localizedCountries: { 'de': 'Deutschland' },
+                        // nationalMode: false,
+                        // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+                        // placeholderNumberType: "MOBILE",
+                        // preferredCountries: ['cn', 'jp'],
+                        // separateDialCode: true,
+                        utilsScript: "js/utils.js",
+                    });
+                </script>
+            </div>
         </div>
     </div>
 
+    </div>
     <!-- End about us area -->
 
     <!--!----------------------------------------------------------------------------------------------------------------- -->

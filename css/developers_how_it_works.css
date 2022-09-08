@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+section {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 1.5%;
+    padding: 1.5%;
+    color: #171717;
+    border-radius: 16px;
+    background-color: #fcfce6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 19em;
+    box-shadow: -15px 15px 10px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.5s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card:hover {
+    box-shadow: -15px 15px 28px #171717, 0 10px 10px #171717;
+    transform: translateY(-25px);
+    ;
+}

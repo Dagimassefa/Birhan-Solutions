@@ -45,8 +45,16 @@
   <link href="css/how_it_works.css" rel="stylesheet">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-</head>
+  <link rel="stylesheet" href="css/intlTelInput.css">
 
+</head>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("cS4MPeWQNKyElWMFu");
+  })();
+</script>
 
 <!--!----------------------------------------------------------------------------------------------------------------- -->
 <!--!                                                 BODY                                                             -->
@@ -115,7 +123,6 @@
     </div>
   </header>
 
-
   <!--!----------------------------------------------------------------------------------------------------------------- -->
   <!--!                                                 HOME-SLIDER                                                      -->
   <!--!----------------------------------------------------------------------------------------------------------------- -->
@@ -125,7 +132,7 @@
     <div class="bend niceties preview-2">
       <div id="ensign-nivoslider" class="slides">
         <img src="img/inicio slider/slider_1.jpg" alt="" title="#slider-direction-1" />
-        <img src="img/inicio slider/slider_2.jpg" alt="" title="#slider-direction-2" />
+        <img src="img/inicio slider/slider3.jpg" alt="" title="#slider-direction-2" />
         <img src="img/inicio slider/logo.jpg" alt="" title="#slider-direction-3" />
       </div>
 
@@ -144,10 +151,38 @@
 
                   <h1 class="title2">Grow your business by working with top software engineers.
                   </h1>
-                  <a class="ready-btn page-scroll" href="Get_In_touch.html" target="_blank">Get in touch</a>
+                  <a class="ready-btn page-scroll" href="#"
+                    class="btn btn-lg btn-secondary hidden-xs bounceInUp animated slow" data-toggle="modal"
+                    data-target="#getintouch">Get in touch</a>
+                  <!-- layer 3 -->
+                  <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  </div>
                 </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- direction 2 -->
+        <div id="slider-direction-2" class="slider-direction slider-two">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="slider-content text-center">
+                  <!-- layer 1 -->
+                  <div class="layer-1-1 hidden-xs wow slideInUp tonyred" data-wow-duration="2s" data-wow-delay=".2s">
+                    <h2 class="title1"><span>Birhan</span> Solutions</h2>
+                  </div>
+                  <!-- layer 2 -->
+                  <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                    <!-- <h1 class="title2">Grow your business by working with top software engineers.</h1> -->
+                    <a class="ready-btn page-scroll" href="#"
+                      class="btn btn-lg btn-secondary hidden-xs bounceInUp animated slow" data-toggle="modal"
+                      data-target="#getintouch">Get in touch</a>
+                  </div>
+                  <!-- layer 3 -->
+                  <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  </div></a>
                 </div>
               </div>
             </div>
@@ -155,56 +190,33 @@
         </div>
       </div>
 
-      <!-- direction 2 -->
-      <div id="slider-direction-2" class="slider-direction slider-two">
+      <!-- direction 3 -->
+      <div id="slider-direction-3" class="slider-direction slider-two">
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content text-center">
+              <div class="slider-content">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInUp tonyred" data-wow-duration="2s" data-wow-delay=".2s">
                   <h2 class="title1"><span>Birhan</span> Solutions</h2>
                 </div>
                 <!-- layer 2 -->
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Grow your business by working with top software engineers.</h1>
-                  <a class="ready-btn page-scroll" href="Get_In_touch.html" target="_blank">Get in touch</a>
+                  <!-- <h1 class="title2">Grow your business by working with top software engineers.</h1> -->
+                  <a class="ready-btn page-scroll" href="#"
+                    class="btn btn-lg btn-secondary hidden-xs bounceInUp animated slow" data-toggle="modal"
+                    data-target="#getintouch">Get in touch</a>
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                </div></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- direction 3 -->
-    <div id="slider-direction-3" class="slider-direction slider-two">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="slider-content">
-              <!-- layer 1 -->
-              <div class="layer-1-1 hidden-xs wow slideInUp tonyred" data-wow-duration="2s" data-wow-delay=".2s">
-                <h2 class="title1"><span>Birhan</span> Solutions</h2>
-              </div>
-              <!-- layer 2 -->
-              <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                <h1 class="title2">Grow your business by working with top software engineers.</h1>
-                <a class="ready-btn page-scroll" href="Get_In_touch.html" target="_blank">Get in touch</a>
-              </div>
-              <!-- layer 3 -->
-              <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Slider Area -->
+    <!-- End Slider Area -->
 
   </div>
   </div>
@@ -236,7 +248,7 @@
           </div>
         </div>
       </div>
-      <h1 style="color: #5834eb;">Connect with us.</h1>
+      <h1 style="color: #5834eb;font-size: 40px;">Connect with us.</h1>
       <p
         style="color: black; font-family: 'Droid Sans', sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0 0 17px;">
         Tell us your team needs.</p>
@@ -255,7 +267,7 @@
           </div>
         </div>
       </div>
-      <h1 style="color: #5834eb;">Receive a short list of top engineers.</h1>
+      <h1 style="color: #5834eb;font-size: 40px;">Receive a short list of top engineers.</h1>
       <p
         style="color: black; font-family: 'Droid Sans', sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0 0 17px;">
         We match developers to your specific needs. All our engineers are highly skilled and pre-screened
@@ -275,7 +287,7 @@
           </div>
         </div>
       </div>
-      <h1 style="color: #5834eb;">Interview Developers.</h1>
+      <h1 style="color: #5834eb;font-size: 40px;">Interview Developers.</h1>
       <p
         style="color: black; font-family: 'Droid Sans', sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0 0 17px;">
         Meet our developers and ensure that they align with your team needs.</p>
@@ -294,12 +306,105 @@
           </div>
         </div>
       </div>
-      <h1 style="color: #5834eb;">Hire.</h1>
+      <h1 style="color: #5834eb;font-size: 40px;">Hire.</h1>
       <p
         style="color: black; font-family: 'Droid Sans', sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0 0 17px;">
         Hire the right talent with confidence.</p>
     </article>
   </section>
+
+
+  <div class="modal fade" id="getintouch" tabindex="-1" role="dialog" aria-labelledby="getintouchLabel"
+    aria-hidden="true">
+
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:lightblue">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="getintouchLabel">Birhan Solutions</h4>
+        </div>
+        <div class="modal-body">
+
+          <form class="form-getintouch" method="post">
+            <script src="js/scripts.js"></script>
+            <h3 class="title-style-1 text-center">Get in touch <span class="title-under"></span> </h3>
+
+
+            <div class="form-group">
+              <input type="text" class="form-control" name="fname" id="fname" placeholder="First Name*" required
+                style="height: 40px;border-radius: 10px" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name*" required
+                style="height: 40px;border-radius: 10px" />
+              <div class="validation"></div>
+            </div>
+
+
+            <div style="width: 100%;display: inline-flex;margin-bottom: 15px;">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email Address*" required
+                style="height: 40px;border-radius: 10px;width: 60%;margin-right: 10px;" />
+              <div class="validation"></div>
+              <input type="tel" name="phone" id="phone" class="form-control"
+                style="border-radius: 10px;height: 40px;" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="message" style="border-radius: 10px;width:100%;resize: none;" rows="10"
+                placeholder="Type your message*"></textarea>
+              <div class="validation"></div>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+          <div class="form-group col-md-12">
+            <button type="submit" class="btn btn-primary pull-right" name="send" onclick="sendMails()"
+              style="margin-right: 20px;">Send</button>
+          </div>
+
+        </div>
+
+
+
+
+
+        </form>
+        <script src="js/intlTelInput.js"></script>
+        <script>
+          var input = document.querySelector("#phone");
+          window.intlTelInput(input, {
+            // allowDropdown: false,
+            // autoHideDialCode: false,
+            // autoPlaceholder: "off",
+            // dropdownContainer: document.body,
+            // excludeCountries: ["us"],
+            // formatOnDisplay: false,
+            // geoIpLookup: function(callback) {
+            //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+            //     var countryCode = (resp && resp.country) ? resp.country : "";
+            //     callback(countryCode);
+            //   });
+            // },
+            // hiddenInput: "full_number",
+            // initialCountry: "auto",
+            // localizedCountries: { 'de': 'Deutschland' },
+            // nationalMode: false,
+            // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+            // placeholderNumberType: "MOBILE",
+            // preferredCountries: ['cn', 'jp'],
+            // separateDialCode: true,
+            utilsScript: "js/utils.js",
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+
+  </div>
 
   <!--!----------------------------------------------------------------------------------------------------------------- -->
   <!--!                                                 FOOTER                                                           -->

@@ -1,12 +1,11 @@
-
 /*----------------------------------------
  0.  CSS COLORS
 ----------------------------------------*/
 
 :root {
-  --primary-color: #cf0e0e;
+  --primary-color: #480ecf;
   --secondary-color: white;
-  --third-color: #c39595;  
+  --third-color: #c39595;
 }
 
 
@@ -14,7 +13,8 @@
   1.  MAIN CSS
 ----------------------------------------*/
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -36,7 +36,12 @@ p {
   color: #444;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Raleway', sans-serif;
   margin: 0 0 15px;
   color: #444;
@@ -83,13 +88,14 @@ a:hover {
   text-decoration: none;
 }
 
-a:active, a:hover {
+a:active,
+a:hover {
   outline: 0 none;
 }
 
 .tonyred h2 span {
-color: var(--primary-color);
-font-weight: 900;
+  color: var(--primary-color);
+  font-weight: 900;
 }
 
 body {
@@ -149,7 +155,17 @@ ul {
   padding: 0;
 }
 
-input, select, textarea, input[type="text"], input[type="date"], input[type="url"], input[type="email"], input[type="password"], input[type="tel"], button, button[type="submit"] {
+input,
+select,
+textarea,
+input[type="text"],
+input[type="date"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+button,
+button[type="submit"] {
   -moz-appearance: none;
   box-shadow: none !important;
 }
@@ -238,7 +254,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   letter-spacing: 1px;
 }
 
-.main-menu ul.navbar-nav li.active > a::after {
+.main-menu ul.navbar-nav li.active>a::after {
   border: 1px solid #fff;
   bottom: 0px;
   content: "";
@@ -264,7 +280,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 
 .main-menu ul.navbar-nav li a:hover {
   color: var(--primary-color);
-  font-weight: bolder; 
+  font-weight: bolder;
 }
 
 .navbar {
@@ -276,7 +292,9 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
 }
 
-.main-menu ul.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+.main-menu ul.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
   background: none;
   color: #333;
 }
@@ -288,12 +306,14 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   padding: 25px 0px;
 }
 
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
   background-color: transparent;
   color: #fff;
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
   background: none;
 }
 
@@ -345,11 +365,11 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   height: 90px;
 }
 
- .navbar-brand>img {
+.navbar-brand>img {
   display: none;
 }
 
- .navbar-brand.sticky-logo>img {
+.navbar-brand.sticky-logo>img {
   display: block;
 }
 
@@ -357,7 +377,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   color: #fff;
   padding: 0;
   margin: 0;
-  font-size: 36px;  
+  font-size: 36px;
   font-weight: bold;
   line-height: 1;
 }
@@ -365,7 +385,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 .sticky-logo h1 span {
   color: #c82b2b;
 }
-.main-menu ul.navbar-nav li.active > a::after {
+
+.main-menu ul.navbar-nav li.active>a::after {
   border: 1px solid #fff;
   bottom: 0px;
   content: "";
@@ -384,9 +405,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   position: relative;
 }
 
-/*------------------------------
-  3. SOBRE NÓS
---------------------------------*/
+
 
 .about-area {
   background-color: #f9f9f9;
@@ -412,13 +431,11 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   color: #444;
 }
 
-.single-well ul li i{
+.single-well ul li i {
   color: var(--primary-color);
 }
 
-/*--------------------------------
-4. SERVIÇOS
---------------------------------*/
+
 
 .services-icon {
   color: #444;
@@ -437,7 +454,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   transition: all 0.5s ease 0s;
 }
 
-.services-details:hover h4, .services-details:hover .services-icon {
+.services-details:hover h4,
+.services-details:hover .services-icon {
   color: var(--primary-color);
 }
 
@@ -460,9 +478,6 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   font-size: 14px;
 }
 
-/*----------------------------------------
-  5. SUBSCRIÇÃO
-----------------------------------------*/
 
 .test-overly {
   background: rgba(0, 0, 0, 0.80);
@@ -471,9 +486,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   height: 100%;
 }
 
-/*----------------------------------------
-  6. PERGUNTAS MAIS FREQUENTES
-----------------------------------------*/
+
 
 .faq-details .panel-heading {
   padding: 0;
@@ -524,7 +537,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   width: 42px;
 }
 
-.faq-details h4.check-title a.active, .faq-details a.active span.acc-icons::before {
+.faq-details h4.check-title a.active,
+.faq-details a.active span.acc-icons::before {
   color: var(--primary-color);
 }
 
@@ -585,7 +599,9 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   font-size: 18px;
 }
 
-.tab-menu ul li.active a, .tab-menu ul li.hover a, .tab-menu ul li.focus a {
+.tab-menu ul li.active a,
+.tab-menu ul li.hover a,
+.tab-menu ul li.focus a {
   border-bottom: 1px solid #fff;
   color: var(--primary-color);
 }
@@ -604,12 +620,10 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 
-/*----------------------------------------
- 7. SUBSCRIÇÃO
-----------------------------------------*/
+
 
 .wellcome-area {
-  background: rgba(248, 248, 248, 0.8) url("../img/background/bg1.jpg");
+  background: rgba(248, 248, 248, 0.8);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -681,9 +695,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   color: var(--primary-color);
 }
 
-/*----------------------------------------
- 8. A EQUIPA
-----------------------------------------*/
+
 
 .team-member {
   background: rgba(0, 0, 0, 0.65) none repeat scroll 0 0;
@@ -695,7 +707,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .team-member::before {
-  background: rgba(0, 0, 0, 0) url("../img/team/team01.jpg") repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) repeat scroll 0 0;
   content: "";
   display: block;
   height: 100%;
@@ -752,16 +764,16 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   position: absolute;
   transition: all 0.5s ease 0s;
   width: 100%;
-  opacity: 0;  
+  opacity: 0;
 }
 
 .team-social-icon {
-  left:65%;
+  left: 65%;
   margin-left: -61px;
   opacity: 0;
   position: absolute;
   top: 30%;
-  transition: 1.3s;  
+  transition: 1.3s;
 }
 
 .team-social-icon ul li {
@@ -790,7 +802,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   padding: 10px 0px;
 }
 
-.team-content>h4, .team-content>p {
+.team-content>h4,
+.team-content>p {
   color: #444;
   margin-bottom: 5px;
 }
@@ -811,12 +824,10 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   text-transform: uppercase;
 }
 
-/*--------------------------------
- 9. JUNTA-TE A NÓS
---------------------------------*/
+
 
 .reviews-area {
-  background: url(../img/background/bg1.jpg);
+  /* background: url(../img/background/bg1.jpg); */
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
@@ -877,7 +888,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   padding: 10px 20px;
 }
 
-.ready-btn, .ready-btn-jtn {
+.ready-btn,
+.ready-btn-jtn {
   border: 1px solid #fff;
   border-radius: 30px;
   color: #fff;
@@ -899,9 +911,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   color: white;
 }
 
-/*----------------------------------------
-10. PORTFOLIO
-----------------------------------------*/
+
 
 .project-menu {
   margin-bottom: 40px;
@@ -927,7 +937,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   transition: all 0.3s ease 0s;
 }
 
-.project-menu li a.active, .project-menu li a:hover {
+.project-menu li a.active,
+.project-menu li a:hover {
   border-color: var(--primary-color);
   background: var(--primary-color);
   color: #fff;
@@ -1053,9 +1064,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   width: 100%;
 }
 
-/*----------------------------------------
-11. TABELA DE PREÇOS
-----------------------------------------*/
+
 
 .pricing-area {
   background: rgba(0, 0, 0, 0.02) none repeat scroll 0 0;
@@ -1162,9 +1171,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   transition: all 0.4s ease 0s;
 }
 
-/*----------------------------------------
-12. TESTEMUNHOS
-----------------------------------------*/
+
 
 .testimonials-area {
   background: rgba(0, 0, 0, 0) url("../img/background/slider1.jpg") no-repeat fixed center top / cover;
@@ -1278,9 +1285,6 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   font-size: 14px;
 }
 
-/*--------------------------------
-13. NOVIDADES
---------------------------------*/
 
 .novidade-area {
   height: auto;
@@ -1328,9 +1332,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   color: white;
 }
 
-/*------------------------------
-  14. OPINIÃO 
---------------------------------*/
+
 
 .opiniao-area {
   background: var(--primary-color) none repeat scroll 0 0;
@@ -1372,9 +1374,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   color: #fff;
 }
 
-/*--------------------------------
-14. CONTACTOS
-/*--------------------------------*/
+
 
 .contact-area {
   height: auto;
@@ -1390,7 +1390,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   padding: 100px;
 }
 
-.contact-form input[type="text"], .contact-form input[type="email"] {
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: 1px solid #ccc;
   border-radius: 0;
@@ -1401,7 +1402,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   width: 100%;
 }
 
-.contact-form textarea  {
+.contact-form textarea {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: 1px solid #ccc;
   border-radius: 0;
@@ -1430,7 +1431,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   background: var(--primary-color);
 }
 
-.contact-form  #sendmessage {
+.contact-form #sendmessage {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
   display: none;
@@ -1450,7 +1451,9 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   margin-bottom: 15px;
 }
 
-.contact-form #sendmessage.show, .contact-form #errormessage.show, .contact-form .show {
+.contact-form #sendmessage.show,
+.contact-form #errormessage.show,
+.contact-form .show {
   display: block;
 }
 
@@ -1486,9 +1489,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   margin-bottom: 20px;
 }
 
-/*----------------------------------------
-15. FOOTER
-----------------------------------------*/
+
 
 .footer-area {
   padding: 40px 0;
